@@ -36,9 +36,9 @@ input:hover {
 }
 
 fieldset {
-    margin: 10px 0;                 /*  MARGEN   */
-    border: 1px solid #d4e6e8;        /*  BORDES  */
-    border-radius: 5px;                 /*  BORDES RENDONDOS  */
+    margin: 10px 0;
+    border: 1px solid #d4e6e8;
+    border-radius: 5px;
 }
 
 legend {

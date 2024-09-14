@@ -13,9 +13,9 @@
         <div class="form_input">         
             <fieldset>
                 <legend>INICIO DE SESION</legend>
-                <input type="text" placeholder="Usuario">
-                <input type="text" placeholder="Contraseña">
-                <a href="/Pagina/index.html"><button type="button">Iniciar Sesion</button></a>
+                <input type="text" minlength="5" placeholder="Usuario (5 caracters minimo)">
+                <input type="text" minlength="8" placeholder="Contraseña (recuerde que son 8 caracteres)">
+                <a href="/Pagina/index.html"><button type="submit">Iniciar Sesion</button></a>
             </fieldset>
         </div>
 
@@ -23,11 +23,16 @@
             <fieldset>
                 <legend>REGISTRARSE</legend>
                 <input type="text" placeholder="Correo@gmail.com">
-                <input type="text" placeholder="Usuario">
-                <input type="text" placeholder="Contraseña">
-                <a href="/Pagina/index.html"><button type="button">Registrarse</button></a>
+                <input type="text" minlength="5" placeholder="Usuario (de 5 caracteres a mas)">
+                <input type="password" minlength="8" placeholder="Contraseña (minimo 8 caracteres)">
+                <a href="/Pagina/index.html"><button type="submit">Registrarse</button></a>
             </fieldset>
             </div>
+
+                <!-- BOTON PARA VOLVER A HOME -->
+        <div class="form_input">
+            <a href="/Pagina/index.html"><button type="button">Voler al Inicio</button></a>
+        </div>    
     </form>
 </body>
 </html>
