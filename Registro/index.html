@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/Registro/styles.css">
+    <link rel="shortcut icon" href="/Imagenes/icon.png" type="image/x-icon">
+</head>
+<body>
+    <form>
+                <!-- CAJA DE REGISTRO -->
+        <div class="form_input">
+            <fieldset id="q1">
+                <legend>REGISTRO</legend>
+                <input type="text" placeholder="Correo Electronico."> 
+                <input type="text" maxlength="10" placeholder="Num Telefono (maximo 10 caracteres)">
+                <input type="text" minlength="5" placeholder="Usuario (5 caracteres minimo.)">
+                <input type="text" minlength="7" placeholder="Contraseña (7 caracteres minimo.)">
+                <input type="text" minlength="7" placeholder="Repetir contraseña.">
+                <a href="/Pagina/index.html"><button type="submit">Registrarse</button></a>
+            </fieldset>
+        </div>
+                <!-- CAJA DE VOLVER A INICIO O AL LOG IN-->
+        <div class="form_input">
+            <fieldset id="q1">
+                <legend>INICIAR SESION</legend>
+            <p>¿Ya tenes cuenta?</p>
+            <a href="/LoginForm/index.html"><button type="submit">Iniciar Sesion.</button></a> 
+            <!-- MANDA A REGISTRO OTRA VEZ NO SE POR QUE, HAY QUE FIJARNOS QUE PASO. -->
+            </fieldset>
+        </div>
+                <!-- BOTON PARA VOLVER A HOME-->
+        <div class="form_input">
+            <a href="/Pagina/index.html"><button type="submit">Volver a inicio</button></a>
+        </div>
+    </form>
+</body>
+</html>

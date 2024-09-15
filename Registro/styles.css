@@ -1,10 +1,12 @@
-body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    /* background: linear-gradient(#425c5e, #2b3f41); */    /* HAY QUE REVISAR EL FONDO */
+    /* background-image: url(/Imagenes/back--pagina.jpg); 
+    background-size: cover;
+    background-position: center; */    /* SE REPITE LA IMAGEN VARIAS VECES HAY QUE REVISAR*/
 }
 
-form {
+form{
     background-color: #2b3f41;
     padding: 20px;
     max-width: 600px;
@@ -14,11 +16,11 @@ form {
     border-radius: 10px;
 }
 
-.form_input {
+.form_input{
     padding: 6px 20px;
 }
 
-input {
+input{
     width: 100%;
     box-sizing: border-box;
     padding: 6px 12px;
@@ -28,26 +30,26 @@ input {
     border-radius: 4px;
     color: #eee;
     margin: 6px 0px;
-}
+} 
 
-input:hover {
+input:hover{
     cursor: default;
     background-color: #354c4e;
 }
 
-fieldset {
+fieldset{
     margin: 10px 0;
     border: 1px solid #d4e6e8;
     border-radius: 5px;
 }
 
-legend {
+legend{
     padding: 0 6px;
     color: #eee;
     text-align: center;
 }
 
-button {
+button{
     width: 30%;
     height: 25px;
     background-color: #869d9f;
@@ -57,24 +59,18 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover{
     background-color: #d4e6e8;
     color: #2b3f41;
     transition-property: background color, color;
     transition-duration: 0.5s;
 }
 
-::placeholder {
-    color: #869d9f;
-} 
-
-#1{
-    color: #eee;
-    text-align: center;
+::placeholder{
+    color: #869d9f;;
 }
 
-#q2{
-    color: #eee;
+#q1{
     text-align: center;
+    color: #eee;
 }
-
