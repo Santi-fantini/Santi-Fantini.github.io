@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    color: #eee;
+    background-color: #869d9f;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -38,4 +40,60 @@ nav {
     background-color: #425c5e;
     transition-property: background color, color;
     transition-duration: 0.5s;
+}
+
+.form {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__form {
+    padding: 12px;
+    max-width: 600px;
+    width: 100%;
+}
+.form__input-container :is(input,textarea) {
+    width: 100%;
+    padding: 9px 6px;
+    font-size: 16px;
+    margin: 4px;
+    border: none;
+    box-shadow: 0px 0px 9px #0003;
+}
+
+label {
+    color: #425c5e;
+}
+
+.form__input-container textarea {
+    resize: none;
+    min-height: 90px;
+    font-family: inherit; /* PARA QUE NO SE PONGA LA FUENTE DEFAULT */
+}
+
+/* .form__input-container:active {
+    border: none;        HAY QUE SACAR LOS BORDER CUANDO SE ESTA ESCRIBIENDO
+} */                         
+
+button {
+    width: 67vh;
+    margin-top: 8px;
+    padding: 12px;
+    background-color: #243132;
+    color: #d4e6e8;
+    border: none;
+}
+
+button:hover {
+    background-color: #425c5e;
+    transition-property: background color, color;
+    transition-duration: 0.3s;
+}
+
+button:active {
+    background-color: #d4e6e8;
+    color: #243132;
 }
