@@ -7,11 +7,11 @@ body{
 }
 
 form{
-    background-color: #2b3f41;
+    background-color: #171e28;
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    box-shadow: 0px 0px 55px #2b3f41;
+    box-shadow: 0px 0px 55px #2f3640;
     margin-top: 50px;
     border-radius: 10px;
 }
@@ -25,7 +25,7 @@ input{
     box-sizing: border-box;
     padding: 6px 12px;
     border: none;
-    border: 1px solid #425c5e;
+    border: 1px solid #2f3640;
     background-color: transparent;
     border-radius: 4px;
     color: #eee;
@@ -34,34 +34,34 @@ input{
 
 input:hover{
     cursor: default;
-    background-color: #354c4e;
+    background-color: #212a33;
 }
 
 fieldset{
     margin: 10px 0;
-    border: 1px solid #d4e6e8;
+    border: 1px solid #f4af03;
     border-radius: 5px;
 }
 
 legend{
     padding: 0 6px;
-    color: #eee;
+    color: #f4af03;
     text-align: center;
 }
 
 button{
     width: 30%;
     height: 25px;
-    background-color: #869d9f;
-    color: white;
+    background-color: #2f3640;
+    color: #ffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover{
-    background-color: #d4e6e8;
-    color: #2b3f41;
+    background-color: #f4af03;
+    color: #171e28;
     transition-property: background color, color;
     transition-duration: 0.5s;
 }

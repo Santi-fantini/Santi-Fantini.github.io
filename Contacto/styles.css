@@ -1,15 +1,19 @@
 body {
     margin: 0;
-    color: #eee;
-    background-color: #869d9f;
+    color: #f4af03;
+    background-color: #2f3640;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* ------------------ INICIO NAV ------------------ */
+
 nav {
-    background-color: #425c5e;
+    background-color: #171e28;
     height: 100%;
     width: 100%;
     padding: 0 20px;
+    box-sizing: border-box; /* para que no se provoce el scroll horizontal */
+    position: relative; /* Para que el nav se posicione normalmente */
 }
 
 .nav__list {
@@ -27,22 +31,27 @@ nav {
 .nav__link {
     font-size: 20px;
     text-decoration: none;
-    color: #d4e6e8;
+    color: #f4af03;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #425c5e;
+    background-color: #171e28;
 }
 
-.nav__link :hover{
-    background-color: #425c5e;
+.nav__link:hover {
+    background-color: #2f3640;
     transition-property: background color, color;
     transition-duration: 0.5s;
 }
 
+/* ------------------ FIN NAV ------------------ */
+
+/* ------------------ INICIO FORM ------------------ */
+
 .form {
+    margin-top: 80px;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -65,7 +74,7 @@ nav {
 }
 
 label {
-    color: #425c5e;
+    color: #ffffff;
 }
 
 .form__input-container textarea {
@@ -82,18 +91,21 @@ button {
     width: 67vh;
     margin-top: 8px;
     padding: 12px;
-    background-color: #243132;
-    color: #d4e6e8;
+    background-color: #171e28;
+    color: 	#ffffff;
     border: none;
 }
 
 button:hover {
-    background-color: #425c5e;
+    background-color: #f4af03;
+    color: #171e28;
     transition-property: background color, color;
     transition-duration: 0.3s;
 }
 
 button:active {
-    background-color: #d4e6e8;
+    background-color: #ffff;
     color: #243132;
 }
+
+/* ------------------ FIN FORM ------------------ */
