@@ -1,13 +1,20 @@
+/*              INICIO DEL BODY              */
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2f3640;
 }
+/*              FIN DEL BODY                 */
 
+/*              INICIO NAV                    */
 nav {
-    background-color: #425c5e;
+    background-color: #171e28;
     height: 100%;
     width: 100%;
     padding: 0 20px;
+    box-sizing: border-box; /* para que no se provoce el scroll horizontal */
+    position: relative; /* Para que el nav se posicione normalmente */
+
 }
 
 .nav__list {
@@ -25,17 +32,34 @@ nav {
 .nav__link {
     font-size: 20px;
     text-decoration: none;
-    color: #d4e6e8;
+    color: #f4af03;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    background-color: #425c5e;
+    background-color: #171e28;
 }
 
-.nav__link :hover{
-    background-color: #425c5e;
+.nav__link:hover {
+    background-color: #2f3640;
     transition-property: background color, color;
     transition-duration: 0.5s;
 }
+/*              FIN DEL NAV                   */
+
+/*              INICIO DEL SEPARADOR          */
+.separator {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Estilo de la imagen del separador */
+  .separator img {
+    position: center; /* Fija la imagen en la pantalla */
+    width: 75%;     /* Ajusta el tamaño de la imagen */
+    height: auto;    /* Mantiene la proporción */
+    z-index: 1000;
+  }
+
