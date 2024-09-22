@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #171e28;
+                color: white;
+            }
+
+            nav {
+                position: fixed;
+                width: 100%;
+                height: 250px;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-color: #171e28;
+            }
+
+            #logo-cabecera {
+                width: 100%;
+            }
+
+            #nav__list {
+                text-align: center;
+                list-style: none;
+            }
+
+            #nav__list li {
+                display: inline;
+                font-size: 30px;
+                padding: 0 10px;
+            }
+            
+            #nav__list li a {
+                color: #f4af03;
+                text-decoration: none;
+            }
+
+            #nav__list li a:hover {
+                background-color: #2f3640;
+                transition-property: background color, color;
+                transition-duration: 0.5s;
+            }
+
+            #content {
+                width: 100%;
+                margin-top: 270px;
+                /* background-color: chartreuse; */
+            }
+
+            .content-row {
+                display: flex;
+                margin: 5px 0;
+            }
+
+            .content-column {
+                flex: 1;
+                border: 1px solid white;
+                /* background-color: #f4af03; */
+                box-sizing: border-box;
+                text-align: center;
+                padding: 10px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 15px 0;
+            }
+
+            #brand {
+                font-weight: bold;
+            }
+
+            /* ------------------ CARROUSEL INICIO ------------------ */
+
+            #slider{
+                margin: 0 auto;
+                width: 800px;
+                height: 500px;
+                overflow:hidden;
+                background-color: black;
+            }
+            /*Valores de las imagenes*/
+            #slider {
+                position: relative;
+                width: 800px;
+                height: 500px;
+                margin-top: 20px;
+                overflow: hidden;
+            }
+
+            #slider img {
+                margin: 0 auto;
+                -moz-transition: opacity 2s;
+                -webkit-transition: opacity 2s;
+                transition: opacity 2s;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                opacity: 0;
+            }
+
+            #slider img:nth-child(1) {
+                opacity: 1;
+            }
+
+            .controls {
+                position: absolute;
+                top: 50%;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+                padding: 0 20px;
+            }
+
+            #izquierda, #derecha {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 18px;
+            }
+
+            #izquierda:hover, #derecha:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* ------------------ CARROUSEL FIN ------------------ */
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="/Imagenes/back--pagina0.jpg" alt="fotoCabecera" id="logo-cabecera" />
+
+            <ul id="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/Sneakers/index.html" class="nav__link">Sneakers</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/Contacto/index.html" class="nav__link">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a href="/LoginForm/index.html" class="nav__link link--button">Log In</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content">
+            <!-- ----carrousel hecho chatGPT prueba---- -->
+            <div id="slider">
+                <img src="/Imagenes/foto-carrousel--1.jpeg" alt="">
+                <img src="/Imagenes/foto-carrousel--2.jpeg" alt="">
+                <img src="/Imagenes/foto-carrousel--3.jpeg" alt="">
+                <img src="/Imagenes/foto-carrousel--4.jpeg" alt="">
+                <img src="/Imagenes/foto-carrousel--5.jpeg" alt="">
+                
+                <div class="controls">
+                    <button id="izquierda" onclick="cambiarManual('IZQ')">Anterior</button>
+                    <button id="derecha" onclick="cambiarManual('DER')">Siguiente</button>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid et molestias magnam quasi! Impedit unde voluptatum sunt? Dolorem ad repellat officia debitis, inventore voluptatibus unde quisquam exercitationem dolor? Facilis!</p>
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid et molestias magnam quasi! Impedit unde voluptatum sunt? Dolorem ad repellat officia debitis, inventore voluptatibus unde quisquam exercitationem dolor? Facilis!</p>
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid et molestias magnam quasi! Impedit unde voluptatum sunt? Dolorem ad repellat officia debitis, inventore voluptatibus unde quisquam exercitationem dolor? Facilis!</p>
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid et molestias magnam quasi! Impedit unde voluptatum sunt? Dolorem ad repellat officia debitis, inventore voluptatibus unde quisquam exercitationem dolor? Facilis!</p>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+            </div>
+
+            <div class="content-row">
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+                <div class="content-column">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1536,h_1536/global/389003/26/sv01/fnd/ARG/fmt/png" alt="" width="150px" />
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © <span id="brand">Santi/Lauti</span> Todos los derechos reservados, 2024
+        </footer>
+
+        <script type="text/javascript" src="Pagina/script.js"></script>
+    </body>
+</html>
