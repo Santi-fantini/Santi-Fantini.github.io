@@ -1,6 +1,7 @@
 /* ------------------ INICIO BODY ------------------ */
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2f3640;
 }
@@ -11,11 +12,14 @@ body {
 
 nav {
     background-color: #171e28;
-    height: 100%;
+    position: fixed;
     width: 100%;
+    height: 230px;
+    top: 0;
+    left: 0;
+    z-index: 2;
     padding: 0 20px;
     box-sizing: border-box; /* para que no se provoce el scroll horizontal */
-    position: relative; /* Para que el nav se posicione normalmente */
 
 }
 
@@ -82,60 +86,219 @@ img {
 
 /* ------------------ CARROUSEL INICIO ------------------ */
 
-
-
-#slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 500px;
-    overflow:hidden;
-    background-color: black;
-}
-/*Valores de las imagenes*/
-#slider {
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
-    width: 800px;
-    height: 500px;
-    margin-top: 20px;
-    overflow: hidden;
-}
-
-#slider img {
-    margin: 0 auto;
-    -moz-transition: opacity 2s;
-    -webkit-transition: opacity 2s;
-    transition: opacity 2s;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-}
-
-#slider img:nth-child(1) {
-    opacity: 1;
-}
-
-.controls {
+    margin: 270px auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-    padding: 0 20px;
-}
-
-#izquierda, #derecha {
-    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
     color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    font-weight: bold;
     font-size: 18px;
-}
-
-#izquierda:hover, #derecha:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #f4af03;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 /* ------------------ CARROUSEL FIN ------------------ */
+
+/* ------------------ SNEAKERS MID INICIO ------------------ */
+
+.product-grid {
+    display: inline-block;
+    margin: 10px 80px;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    width: 180px;
+    padding: 15px;
+    box-shadow: 0 4px 8px #171e28;
+    display: inline-block;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #171e28;
+    text-shadow: 0 0 1px #171e28;
+    flex-grow: 0;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #171e28;
+    text-shadow: 0 0 1px #171e28;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #171e28;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f4af03;
+    color: #171e28;
+    transition-property: background color, color;
+    transition-duration: 0.2s;
+}
+
+/* ------------------ SNEAKERS MID FIN ------------------ */
+
+/* ------------------ FOOTER INICIO ------------------ */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #171e28;
+}
+
+#brand {
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.full-width-border {
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 2px solid #262a2f;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h3 {
+    color: #f4af03;
+    border-bottom: 2px solid #f4af03;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.column ul {
+    padding: 0;
+}
+
+.column ul li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #996f04;
+}
+
+.column ul li a:hover {
+    color: #f4af03;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.imagenes img {
+    width: 120px;
+    padding: 35px;
+    padding-top: 0px;
+}
+
+#logoFooter {
+    width: 60%;
+    margin-top: 50px;
+}
+/* ------------------ FOOTER FIN ------------------ */
