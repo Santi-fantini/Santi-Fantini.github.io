@@ -190,7 +190,7 @@ img {
     border-radius: 10px;
     width: 180px;
     padding: 15px;
-    box-shadow: 0 4px 8px #171e28;
+    box-shadow: 0 4px 12px #171e28;
     display: inline-block;
     text-align: center;
 }
@@ -198,13 +198,14 @@ img {
 .product-card img {
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 3px 17px #cdcdd1; /* SOMBRA MINIMA PARA QUE LA FOTO DE SNEAKER RESALTE*/
 }
 
 .product-card h3 {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 16px;
+    margin: 15px 0;
     color: #171e28;
-    text-shadow: 0 0 1px #171e28;
+    text-shadow: 0 0 1px #171e28; /* SOMBRA PARA QUE RESALTE MAS EL TEXTO */
     flex-grow: 0;
 }
 
@@ -232,6 +233,12 @@ button:hover {
 }
 
 /* ------------------ SNEAKERS MID FIN ------------------ */
+
+/* ------------------ TEXTO MID FIN ------------------ */
+p {
+    color: #fff;
+}
+/* ------------------ TEXTO MID FIN ------------------ */
 
 /* ------------------ FOOTER INICIO ------------------ */
 footer {

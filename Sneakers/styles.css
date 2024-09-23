@@ -2,18 +2,22 @@
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2f3640;
+    background-color: 	#e5e6eb;
 }
 /*              FIN DEL BODY                 */
 
-/*              INICIO NAV                    */
+/* ------------------ INICIO NAV ------------------ */
+
 nav {
     background-color: #171e28;
-    height: 100%;
+    position: fixed;
     width: 100%;
+    height: 230px;
+    top: 0;
+    left: 0;
+    z-index: 2;
     padding: 0 20px;
     box-sizing: border-box; /* para que no se provoce el scroll horizontal */
-    position: relative; /* Para que el nav se posicione normalmente */
 
 }
 
@@ -46,20 +50,185 @@ nav {
     transition-property: background color, color;
     transition-duration: 0.5s;
 }
-/*              FIN DEL NAV                   */
 
-/*              INICIO DEL SEPARADOR          */
+.link--button {
+    border: 1px solid #fff;
+    background-color: #171e28;
+    padding: 3px 18px;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.link--button:hover {
+    background: #f4af03;
+    color: #fff;
+}
+
+.nav__image {
+    position: fixed; /* Fija la imagen en la pantalla */
+    top: 10px;       /* Ajusta la posición verticalmente */
+    right: 20px;     /* Ajusta la posición horizontalmente */
+    width: 50px;     /* Ajusta el tamaño de la imagen */
+    height: auto;    /* Mantiene la proporción */
+    z-index: 1000;   /* Asegura que la imagen esté por encima de otros elementos */
+}
+
+/* ------------------ FIN NAV ------------------ */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------ INICIO MIDPAGE ------------------ */
+.product-grid {
+    display: inline-block;
+    margin: 10px 80px;
+    margin-top: 20px;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: 	#e5e6eb;
+    border-radius: 20px;
+    width: 291px;
+    padding: 21px;
+    margin: 7px;
+    display: inline-block;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: 	#171e28;
+    text-shadow: 0 0 1px #171e28; /* SOMBRA PARA QUE RESALTE MAS EL TEXTO */
+    flex-grow: 0;
+}
+
+.product-card .price {
+    font-size: 18px;
+    color: #171e28;
+    text-shadow: 0 0 1px #171e28;
+    margin: 10px 0;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #171e28;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3f4246;
+    color: #ffffff;
+    transition-property: background color, color;
+    transition-duration: 0.2s;
+}
+
+/* ------------------ SNEAKERS MID FIN ------------------ */
+/* ------------------ FIN MIDPAGE ------------------ */
+
+
+
+/* ------------------ INICIO SEPARADOR ------------------      
 .separator {
     width: 100%;
     text-align: center;
     margin-top: 10px;
   }
   
-  /* Estilo de la imagen del separador */
+  Estilo de la imagen del separador 
   .separator img {
-    position: center; /* Fija la imagen en la pantalla */
-    width: 75%;     /* Ajusta el tamaño de la imagen */
-    height: auto;    /* Mantiene la proporción */
+    position: center;  Fija la imagen en la pantalla 
+    width: 75%;      Ajusta el tamaño de la imagen 
+    height: auto;     Mantiene la proporción 
     z-index: 1000;
-  }
+  }  /* ------------------ FIN SEPARADOR ------------------ */
+   
+  
 
+/* ------------------ FOOTER INICIO ------------------ */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px; /* MARGEN PARA QUE SE SEPARE DE LOS PRODUCTOS*/
+    background-color: #171e28;
+}
+
+#brand {
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.full-width-border {
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 2px solid #262a2f;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h3 {
+    color: #f4af03;
+    border-bottom: 2px solid #f4af03;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.column ul {
+    padding: 0;
+}
+
+.column ul li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #996f04;
+}
+
+.column ul li a:hover {
+    color: #f4af03;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.imagenes img {
+    width: 120px;
+    padding: 35px;
+    padding-top: 0px;
+}
+
+#logoFooter {
+    width: 60%;
+    margin-top: 50px;
+}
+/* ------------------ FOOTER FIN ------------------ */
