@@ -14,12 +14,13 @@ nav {
     background-color: #171e28;
     position: fixed;
     width: 100%;
-    height: 230px;
+    height: 180px;
     top: 0;
     left: 0;
     z-index: 2;
     padding: 0 20px;
     box-sizing: border-box; /* para que no se provoce el scroll horizontal */
+    text-align: center;
 
 }
 
@@ -68,19 +69,19 @@ nav {
 }
 
 .nav__image {
-    position: fixed; /* Fija la imagen en la pantalla */
-    top: 10px;       /* Ajusta la posición verticalmente */
-    right: 20px;     /* Ajusta la posición horizontalmente */
-    width: 50px;     /* Ajusta el tamaño de la imagen */
-    height: auto;    /* Mantiene la proporción */
-    z-index: 1000;   /* Asegura que la imagen esté por encima de otros elementos */
+    position: fixed;
+    top: 10px;       
+    right: 20px;     
+    width: 50px;     
+    height: auto;    
+    z-index: 1000;   
 }
 
 /* ------------------ FIN NAV ------------------ */
 
 
 img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
@@ -274,6 +275,24 @@ p {
     color: #fff;
 }
 /* ------------------ TEXTO MID FIN ------------------ */
+
+/* ------------------ SEGUNDA FILA DE SNEAKERS INICIO ------------------ */
+.product-grid-2 {
+    display: inline-block;
+    margin: 20px 80px;
+    margin-bottom: 80px;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-grid-2 h2 {
+    color: #2f3640;
+    text-align: left;
+}
+
+/* ------------------ SEGUNDA FILA DE SNEAKERS FIN ------------------ */
 
 /* ------------------ FOOTER INICIO ------------------ */
 footer {
