@@ -37,32 +37,38 @@
     <!------------------------------------------------------------- SECCION FIN ------------------------------------------------------------->
     <!------------------------------------------------------------- CONTACT INICIO ------------------------------------------------------------->
     <section class="form">
-        <form class="form__form">                    
+        <form id="contactForm" class="form__form">                    
             <div class="form__input-container">                     
                 <h1>Contactanos</h1>
-                <label>Nombre
-                    <input type="text" placeholder="Nombre"></input>
+                <label>Nombre Completo
+                    <input type="text" id="nombre" maxlength="50" placeholder="Nombre Apellido" oninput="validar()"></input>
                 </label>
-            </div>
-            <div class="form__input-container">
-                <label>Apellido
-                    <input type="text" placeholder="Apellido"></input>
-                </label>
+                <p id="messages"></p>
             </div>
             <div class="form__input-container">
                 <label>Mail
-                    <input type="email" placeholder="ejemplo@mail.com"></input>
+                    <input type="email" id="email" maxlength="50" placeholder="ejemplo@mail.com" oninput="validarE()"></input>
                 </label>
+                <p id="messagesE"></p>
+            </div>
+            <div class="form__input-container">
+                <label>Telefono
+                    <input type="tel" id="phone" maxlength="15" placeholder="Numero Celular" oninput="validarT()"></input>
+                </label>
+                <p id="messagesT"></p>
             </div>
             <div class="form__input-container">        
                 <label>Mensaje
-                    <textarea placeholder="Tu mensaje"></textarea>
-                </label>                            
+                    <textarea id="message" minlength="50" maxlength="200" placeholder="Tu mensaje (maximo 200 caracteres)" oninput="validarM()"></textarea>
+                </label> 
+                <p id="messagesM"></p>                           
             </div>
             <div class="form__input-container">        
                     <button class="submit_button" type="submit"> Enviar </button>                        
             </div>
-        </form>     
+        </form>
+
+        <script src="/Contacto/script.js"></script>
     </section>   
     
 
