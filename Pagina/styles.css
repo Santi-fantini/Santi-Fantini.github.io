@@ -91,7 +91,7 @@ img {
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 270px auto;
+    margin: 240px auto 50px;
   }
   
   /* Hide the images by default */
@@ -151,7 +151,6 @@ img {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
     background-color: #f2f2f2;
     border-radius: 50%;
     display: inline-block;
