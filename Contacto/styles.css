@@ -118,10 +118,6 @@ label {
     font-family: inherit; /* PARA QUE NO SE PONGA LA FUENTE DEFAULT */
 }
 
-/* .form__input-container:active {
-    border: none;        HAY QUE SACAR LOS BORDER CUANDO SE ESTA ESCRIBIENDO
-} */                         
-
 button {
     width: 67vh;
     margin-top: 8px;

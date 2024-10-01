@@ -1,10 +1,10 @@
-/*              INICIO DEL BODY              */
+/*------------------ INICIO DEL BODY ------------------*/
 body {
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: 	#e5e6eb;
 }
-/*              FIN DEL BODY                 */
+/*------------------ FIN DEL BODY ------------------*/
 
 /* ------------------ INICIO NAV ------------------ */
 
@@ -84,7 +84,7 @@ img {
 /* ------------------ INICIO MIDPAGE ------------------ */
 #seccion {
     padding: 0px 60px;
-    margin-top: 30px;
+    margin-top: 220px;
 }
 
 #seccion a {
@@ -171,26 +171,8 @@ button:hover {
 }
 
 /* ------------------ SNEAKERS MID FIN ------------------ */
+
 /* ------------------ FIN MIDPAGE ------------------ */
-
-
-
-/* ------------------ INICIO SEPARADOR ------------------      
-.separator {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  Estilo de la imagen del separador 
-  .separator img {
-    position: center;  Fija la imagen en la pantalla 
-    width: 75%;      Ajusta el tamaño de la imagen 
-    height: auto;     Mantiene la proporción 
-    z-index: 1000;
-  }  /* ------------------ FIN SEPARADOR ------------------ */
-   
-  
 
 /* ------------------ FOOTER INICIO ------------------ */
 footer {

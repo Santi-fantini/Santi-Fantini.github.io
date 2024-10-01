@@ -1,19 +1,130 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    /* background: linear-gradient(#425c5e, #2b3f41); */    /* HAY QUE REVISAR EL FONDO */
+    background-color: #e5e6eb;
 }
+
+/* ------------------ INICIO NAV ------------------ */
+
+nav {
+    background-color: #171e28;
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0 20px;
+    box-sizing: border-box; /* para que no se provoce el scroll horizontal */
+    text-align: center;
+}
+
+.nav__list {
+    margin: 0;
+    text-align: center;
+}
+
+.nav__item {
+    display: inline-block;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.nav__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #f4af03;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #171e28;
+}
+
+.nav__link:hover {
+    background-color: #2f3640;
+    transition-property: background color, color;
+    transition-duration: 0.5s;
+}
+
+.link--button {
+    border: 1px solid #fff;
+    background-color: #171e28;
+    padding: 3px 18px;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.link--button:hover {
+    background: #f4af03;
+    color: #fff;
+}
+
+.nav__image {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 50px;
+    height: auto;
+    z-index: 1000;
+}
+
+/* ------------------ FIN NAV ------------------ */
+
+img {
+    width: 70%;
+    height: auto;
+}
+
 
 /* ------------------ INICIO FORM ------------------ */
 
+#seccion {
+    margin-top: 2px;
+    margin-left: 60px;
+    text-align: start;
+    
+}
+
+#seccion a {
+    text-decoration: none;
+    outline: none;
+    color: #171e28;
+}
+
+#seccion a:hover {
+    color: #f4af03;
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+
+#seccion h1 {
+    text-decoration: none;
+    outline: none;
+    color: #171e28;
+}
+
+#seccion h1:hover {
+    color: #f4af03;
+    transition-property: color;
+    transition-duration: 0.1s;
+}
+
+#form--login {
+    text-align: center;
+    padding-top: 210px;
+    padding-bottom: 120px;
+}
+
 form {
-    background-color: #171e28;
+    background-color: #f8f8fa;
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    box-shadow: 0px 0px 55px #2f3640;
     margin-top: 50px;
-    border-radius: 10px;
 }
 
 .form_input {
@@ -28,28 +139,29 @@ input {
     border: 1px solid #2f3640;
     background-color: transparent;
     border-radius: 4px;
-    color: #eee;
-    margin: 6px 0px;
+    color: #171e28;
+    margin: 7px 0px;
 }
 
 input:hover {
-    cursor: default;
-    background-color: #212a33;
+    background-color: #d2d4dc;
 }
 
 fieldset {
     margin: 10px 0;
-    border: 1px solid #f4af03;
+    border: 0.5px solid #babfc7;
     border-radius: 5px;
 }
 
 legend {
     padding: 0 6px;
-    color: #f4af03;
+    color: #171e28;
     text-align: center;
 }
 
 button {
+    margin-top: 15px;
+    margin-bottom: 13px;
     width: 30%;
     height: 25px;
     background-color: #2f3640;
@@ -67,17 +179,88 @@ button:hover {
 }
 
 ::placeholder {
-    color: #869d9f;
+    color: #2f3640;
 } 
 
 #1{
-    color: #eee;
+    color: #171e28;
     text-align: center;
 }
 
 #q2{
-    color: #eee;
+    color: #171e28;
     text-align: center;
 }
 
 /* ------------------ FIN FORM ------------------ */
+
+/* ------------------ FOOTER INICIO ------------------ */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px; /* MARGEN PARA QUE SE SEPARE DE LOS PRODUCTOS*/
+    background-color: #171e28;
+}
+
+#brand {
+    color: #ffffff;
+    width: 100%;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.full-width-border {
+    padding-top: 10px;
+    width: 100%;
+    border-bottom: 2px solid #262a2f;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.column {
+    width: 30%;
+}
+
+.column h3 {
+    color: #f4af03;
+    border-bottom: 2px solid #f4af03;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.column ul {
+    padding: 0;
+}
+
+.column ul li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+.column ul li a {
+    text-decoration: none;
+    color: #996f04;
+}
+
+.column ul li a:hover {
+    color: #f4af03;
+    transition-property: color;
+    transition-duration: 0.2s;
+}
+
+.imagenes img {
+    width: 120px;
+    padding: 35px;
+    padding-top: 0px;
+}
+
+#logoFooter {
+    width: 60%;
+    margin-top: 50px;
+}
+/* ------------------ FOOTER FIN ------------------ */

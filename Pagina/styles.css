@@ -21,7 +21,6 @@ nav {
     padding: 0 20px;
     box-sizing: border-box; /* para que no se provoce el scroll horizontal */
     text-align: center;
-
 }
 
 .nav__list {
@@ -78,7 +77,6 @@ nav {
 }
 
 /* ------------------ FIN NAV ------------------ */
-
 
 img {
     width: 70%;
@@ -245,13 +243,14 @@ button:hover {
 #lil-nas {
     width: 540px;
     height: 500px;
-    border-radius: 17px;
+    border-radius: 7px;
+    padding-right: 50px;
 }
 
 #lil-nas-shoe {
     width: 490px;
     height: 500px;
-    border-radius: 17px;
+    border-radius: 7px;
     justify-items: center;
 }
 
