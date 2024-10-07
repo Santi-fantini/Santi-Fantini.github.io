@@ -29,52 +29,22 @@
         </ul>
     </nav>
             <!------------------------------------------------------------- NAV FIN ------------------------------------------------------------->
-
-            <!-------------------------------------------------------------CARROUSEL ------------------------------------------------------------->
-
-<div class="carousel-container">
-
-                    <!-- Full-width images with number and caption text -->
-        <div class="carousel-slide">
-            <div class="slide-number">1 / 3</div>
-            <img src="/Imagenes/foto-carrousel--1.jpeg" style="width:100%">
-        </div>
-    
-        <div class="carousel-slide">
-            <div class="slide-number">2 / 3</div>
-            <img src="/Imagenes/foto-carrousel--2.jpeg" style="width:100%">
-        </div>
-    
-        <div class="carousel-slide">
-            <div class="slide-number">3 / 3</div>
-            <img src="/Imagenes/foto-carrousel--3.jpeg" style="width:100%">
-        </div>
-
-                    <!-- Next and previous buttons -->
-        <a class="button-prev" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="button-next" onclick="changeSlide(1)">&#10095;</a>
-</div>
-  
-                        <!-- The dots/circles -->
-    <div class="dots-container">
-        <span class="carousel-dot" onclick="currentSlide(1)"></span>
-        <span class="carousel-dot" onclick="currentSlide(2)"></span>
-        <span class="carousel-dot" onclick="currentSlide(3)"></span>
-    </div>
-
-<script type="text/javascript" src="carousel.js"></script>
-            <!-------------------------------------------------------------CARROUSEL FIN ------------------------------------------------------------->
-
+            <section class="cuotas">      
+                        <h4>HASTA 12 CUOTAS SIN INTÉRES EN TODO EL SITIO!</h4>
+            </section>
+        <div id="img-banner">
+            <img src="https://nikearprod.vtexassets.com/assets/vtex.file-manager-graphql/images/28e6a9d8-fbce-4d6f-bf28-49d3842248ba___b8ddaa23d8e5f5871fd19e0f96415404.jpg" alt="BannerPrinicpal">
+        </div>    
             <!-------------------------------------------------------------SNEAKERS MIDPAGE 1 ------------------------------------------------------------->
-    <div class="product-grid">
+        <div class="product-grid">
         <h2>Trending Sneakers</h2>
         <div class="product-card">
                 <img src="https://dropstore.com.co/cdn/shop/files/NIKEJORDAN1RETROHIGHOGCHICAGOLOST_FOUND1.webp?v=1721699150&width=600" alt="Producto 1">
-                    <h3>Jordan 1 High Chicago Lost And Found</h3>
+                <h3>Jordan 1 High Chicago Lost And Found</h3>
                     <div class="price">$195</div>
                     <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
-        </div>
-
+                </div>
+                
         <div class="product-card">
                 <img src="https://dropstore.com.co/cdn/shop/files/ADIDAS_YEEZY_SLIDE_SLATE_MARINE1_0bfc6e5a-a4d5-4975-a74e-ba8053229593.webp?v=1716765579" alt="Producto 2">
                 <h3>Adidas Yeezy Slide Slate Marine</h3>
@@ -95,7 +65,7 @@
             <div class="price">$285</div>
             <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
         </div>
-
+        
         <div class="product-card">
             <img src="https://dropstore.com.co/cdn/shop/files/SALOMONXT-4OGLUNARROCKWHITE1.webp?v=1722873684&width=713" alt="Producto 5">
             <h3>Salomon XT-4 Lunar Rock White</h3>
@@ -105,7 +75,7 @@
 
         <div class="product-card">
         <img src="https://dropstore.com.co/cdn/shop/files/JORDAN3RETROSPJBALVINMEDELLINSUNSET1.webp?v=1721853283&width=713" alt="Producto 6">
-            <h3>Jordan 3 Retro J Balvin Medellin Sunset</h3>
+        <h3>Jordan 3 Retro J Balvin Medellin Sunset</h3>
             <div class="price">$344</div>
             <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
         </div>
@@ -128,24 +98,22 @@
     
     <!-------------------------------------------------------------SNEAKERS MIDPAGE FIN ----------------------------------------------------------->
 
-    <!------------------------------------------------------------- IMAGE MID PAGE  ----------------------------------------------------------->
+    <!-------------------------------------------------------------CARROUSEL ------------------------------------------------------------->
 
-    <div class="lil--nas">
-        <h2> HYPE SHOE: </h2>
-
-        <img src="/Imagenes/lil-nas-shoe.jpg" id="lil-nas" alt="">
-        <img src="/Imagenes/lil-nas-shoe2.jpeg" id="lil-nas-shoe" alt="">
-
-        <h3>Sangre humana, Nike y un grupo de artistas.</h3> 
-        <p>
-            El controvertido par de "zapatillas de Satán" -que contienen una gota de sangre humana real en las suelas, Con un precio de US$1.018, MSCHF puso a la venta 666 pares el lunes en colaboración con Lil Nas X y dice que se agotaron en menos de un minuto.
-        </p>
+            <!-- Slideshow container -->
+    <div class="slideshow-container" id="slideshow-container">
+            <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-
-    <!------------------------------------------------------------- IMAGE MID PAGE FIN ----------------------------------------------------------->
-
+                <!-- Dots para saber en que imagen esta el usuario -->
+    <div style="text-align:center" id="dots-container"></div>
+    <script type="text/javascript" src="script.js"></script>
+    <!-------------------------------------------------------------CARROUSEL FIN ------------------------------------------------------------->
+    
+    
     <!------------------------------------------------------------- SEGUNDA FILA DE SNEAKERS INICIO ----------------------------------------------------------->  
-
+    
     <div class="product-grid-2">
         <h2>Woman Sneakers</h2>
         <div class="product-card">
@@ -156,7 +124,7 @@
         </div>
     
         <div class="product-card">
-                <img src="https://dropstore.com.co/cdn/shop/files/NIKEJORDAN1RETROHIGHOGWHITECEMENT1.webp?v=1721699098&width=713" alt="Producto 10">
+            <img src="https://dropstore.com.co/cdn/shop/files/NIKEJORDAN1RETROHIGHOGWHITECEMENT1.webp?v=1721699098&width=713" alt="Producto 10">
                 <h3>Jordan 1 Retro High OG White Cement (W)</h3>
                 <div class="price">$85</div>
                 <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
@@ -168,7 +136,7 @@
             <div class="price">$142</div>
             <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
         </div>
-    
+        
         <div class="product-card">
             <img src="https://dropstore.com.co/cdn/shop/files/NIKEAIRFORCE1_07_GDRAGON1.webp?v=1723585078&width=713" alt="Producto 19">
             <h3> Nike Air Force 1 "07" G Dragon (W)</h3>
@@ -184,33 +152,96 @@
         </div>
     
         <div class="product-card">
-            <img src="https://dropstore.com.co/cdn/shop/files/JORDAN3RETROSPJBALVINMEDELLINSUNSET1.webp?v=1721853283&width=713" alt="Producto 6">
+            <img src="https://dropstore.com.co/cdn/shop/files/JORDAN3RETROSPJBALVINMEDELLINSUNSET1.webp?v=1721853283&width=713" alt="Producto 22">
             <h3>Jordan 3 Retro J Balvin Medellin Sunset (W)</h3>
             <div class="price">$344</div>
             <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
         </div>
     
         <div class="product-card">
-            <img src="https://dropstore.com.co/cdn/shop/files/JORDAN_4_RETRO_UNIVERSITY_BLUE1_30d052cb-b202-4831-83a7-0bdb715f806c.webp?v=1716765395&width=713" alt="Producto 15">
+            <img src="https://dropstore.com.co/cdn/shop/files/JORDAN_4_RETRO_UNIVERSITY_BLUE1_30d052cb-b202-4831-83a7-0bdb715f806c.webp?v=1716765395&width=713" alt="Producto 23">
             <h3>Jordan 4 Retro University Blue (W)</h3>
             <div class="price">$386</div>
             <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
         </div>
     
         <div class="product-card">
-            <img src="https://dropstore.com.co/cdn/shop/files/ADIDAS_CAMPUS_SOUTH_PARK_TOALLIN_1_24f61378-71dd-4e14-8511-cc0bfce0086a.webp?v=1716765298&width=600" alt="Producto 8">
+            <img src="https://dropstore.com.co/cdn/shop/files/ADIDAS_CAMPUS_SOUTH_PARK_TOALLIN_1_24f61378-71dd-4e14-8511-cc0bfce0086a.webp?v=1716765298&width=600" alt="Producto 24">
             <h3>Adidas Campus 80S South Park Towlie (W)</h3>
             <div class="price">$130</div>
             <a href="/Sneakers/index.html"><button> ME INTERESA </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
         </div>
     </div>
-
+    
     <!------------------------------------------------------------- SEGUNDA FILA DE SNEAKERS FIN ----------------------------------------------------------->
+    
+    <!------------------------------------------------------------- SECCION RESERVA SNEAKERS  ----------------------------------------------------------->
+
+    <div class="product-grid-2">
+        <h2>PROXIMAMENTE EN SL SNEAKERS (RESERVA HABILITADA)</h2>
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/95d03aac34a97c87f5cc2a1da31cb86c.jpg?v=1727229777&width=713" alt="Producto 25">
+            <h3>Travis Scott Jordan 1 Low OG Medium Olive</h3>
+            <div class="price">$191</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/08c529bcc62a45fa3acd2bbcc4df54c0.jpg?v=1721185605&width=713" alt="Producto 26">
+                <h3>Travis Scott Jordan 1 Low Resverse Mocha</h3>
+                <div class="price">$85</div>
+                <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/46496a46178c7bf2fc029918e7eb25a7.jpg?v=1721185631&width=713" alt="Producto 27">
+            <h3>Travis Scott Air force 1 "Utopia"</h3>
+            <div class="price">$142</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+        
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/products/90a63464a015c9f52589d1951ab75596.jpg?v=1710874565&width=713" alt="Producto 28">
+            <h3> Travis Scott Jordan 1 OG High Mocha</h3>
+            <div class="price">$230</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/1_e56c737f-c496-4a06-9a0c-b3d42824c7d7.jpg?v=1721769906&width=713" alt="Producto 29">
+            <h3>Air Jordan 4 OG "White Thunder"</h3>
+            <div class="price">$74</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/e1586816b980a9c370175c3b4b0b3c34.jpg?v=1718654807&width=713" alt="Producto 30">
+            <h3>Air Jordan 1 OG High Origin Story</h3>
+            <div class="price">$344</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/0d5f756577b3818426a12bc02f7e98f6.jpg?v=1718654792&width=713" alt="Producto 31">
+            <h3>Off White x Jordan 1 Retro High UNC</h3>
+            <div class="price">$386</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    
+        <div class="product-card">
+            <img src="https://wegotkickspr.com/cdn/shop/files/5ff22effbeb165f6559428f3f4735b85.jpg?v=1718650420&width=713" alt="Producto 32">
+            <h3>Travis Scott x Jordan 1 Low Cannary</h3>
+            <div class="price">$130</div>
+            <a href="/Sneakers/index.html"><button> RESERVAR </button></a> <!-- BOTON PARA IR A SNEAKERS A COMPRAR -->
+        </div>
+    </div>
+
+    <!------------------------------------------------------------- SECCION RESERVA FIN ----------------------------------------------------------->
 
     <!------------------------------------------------------------------ FOOTER INICIO --------------------------------------------------------------------->
 
     <footer>
-        <span id="brand"> © Santi/Lauti - SL SNEAKERS</span>
+        <span id="brand"> © Santi/Lauti - SL SNEAKERS 2024</span>
             <div class="full-width-border">
                 <!-- Linea que separa Brand de Menu -->
             </div>

@@ -76,6 +76,21 @@ nav {
 
 /* ------------------ FIN NAV ------------------ */
 
+.cuotas {
+    text-align: center;
+    align-items: center;
+    margin-top: 180px;
+    padding: 1px 30px;
+    background-color: #0f1319;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #e5e6eb;
+}
+
+.cuotas h4 {
+    text-align: center;
+}
+
 img {
     width: 70%;
     height: auto;
@@ -84,7 +99,7 @@ img {
 /* ------------------ INICIO MIDPAGE ------------------ */
 #seccion {
     padding: 0px 60px;
-    margin-top: 220px;
+    margin-top: 40px;
 }
 
 #seccion a {

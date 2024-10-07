@@ -81,59 +81,83 @@
 
             /* ------------------ CARROUSEL INICIO ------------------ */
 
-            #slider{
-                margin: 0 auto;
-                width: 800px;
-                height: 500px;
-                overflow:hidden;
-                background-color: black;
-            }
-            /*Valores de las imagenes*/
-            #slider {
-                position: relative;
-                width: 800px;
-                height: 500px;
-                margin-top: 20px;
-                overflow: hidden;
-            }
+            /* Carousel container */
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
 
-            #slider img {
-                margin: 0 auto;
-                -moz-transition: opacity 2s;
-                -webkit-transition: opacity 2s;
-                transition: opacity 2s;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                opacity: 0;
-            }
+/* Each slide */
+.carousel-slide {
+  display: none;
+}
 
-            #slider img:nth-child(1) {
-                opacity: 1;
-            }
+/* Slide image */
+.carousel-slide img {
+  width: 100%;
+  border-radius: 8px;
+}
 
-            .controls {
-                position: absolute;
-                top: 50%;
-                width: 95%;
-                display: flex;
-                justify-content: space-between;
-                transform: translateY(-50%);
-                padding: 0 20px;
-            }
+/* Navigation buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 18px;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
 
-            #izquierda, #derecha {
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;
-                border: none;
-                padding: 10px;
-                cursor: pointer;
-                font-size: 18px;
-            }
+.carousel-button.prev {
+  left: 10px;
+}
 
-            #izquierda:hover, #derecha:hover {
-                background-color: rgba(0, 0, 0, 0.8);
-            }
+.carousel-button.next {
+  right: 10px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Dots navigation */
+.carousel-dots {
+  text-align: center;
+  padding: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+            
 
             .menu {
     display: flex;
@@ -253,18 +277,32 @@
 
         <div id="content">
             <!-- ----carrousel hecho chatGPT prueba---- -->
-            <div id="slider">
-                <img src="/Imagenes/foto-carrousel--1.jpeg" alt="">
-                <img src="/Imagenes/foto-carrousel--2.jpeg" alt="">
-                <img src="/Imagenes/foto-carrousel--3.jpeg" alt="">
-                <img src="/Imagenes/foto-carrousel--4.jpeg" alt="">
-                <img src="/Imagenes/foto-carrousel--5.jpeg" alt="">
-                
-                <div class="controls">
-                    <button id="izquierda" onclick="cambiarManual('IZQ')">Anterior</button>
-                    <button id="derecha" onclick="cambiarManual('DER')">Siguiente</button>
-                </div>
-            </div>
+            <!-- Carousel container -->
+  <div class="carousel-container">
+    <!-- Slide images -->
+    <div class="carousel-slide">
+        <img src="/Imagenes/foto-carrousel--1.jpeg" alt="Image 1">
+    </div>
+    <div class="carousel-slide">
+        <img src="/Imagenes/foto-carrousel--2.jpeg" alt="Image 2">
+    </div>
+    <div class="carousel-slide">
+        <img src="/Imagenes/foto-carrousel--3.jpeg" alt="Image 3">
+    </div>
+
+    <!-- Navigation buttons -->
+    <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<!-- Dots navigation -->
+<div class="carousel-dots">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script src="pruebaCarrusel.js"></script>
 
             <div class="content-row">
                 <div class="content-column">

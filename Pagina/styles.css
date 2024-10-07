@@ -78,78 +78,37 @@ nav {
 
 /* ------------------ FIN NAV ------------------ */
 
+.cuotas {
+    text-align: center;
+    align-items: center;
+    margin-top: 180px;
+    padding: 1px 30px;
+    background-color: #0f1319;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #e5e6eb;
+}
+
+.cuotas h4 {
+    text-align: center;
+}
+
 img {
     width: 70%;
     height: auto;
 }
 
-/* ------------------ CARROUSEL INICIO ------------------ */
-
-/* Carousel container */
-.carousel-container {
-    max-width: 900px;
-    position: relative;
-    margin: 100px auto;
+#img-banner {
+    width: 100%;
+    
 }
 
-/* Hide the images by default */
-.carousel-slide {
-    display: none;
+#img-banner img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra causado por las imágenes inline */
 }
 
-/* Previous & next buttons */
-.button-prev, .button-next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 12px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 3px;
-    transition: 0.5s ease;
-    user-select: none;
-}
-
-/* Position the next button to the right */
-.button-next {
-    right: 0;
-}
-
-.button-prev:hover, .button-next:hover {
-    background-color: #ff9800;
-}
-
-/* Slide number text */
-.slide-number {
-    color: #ffffff;
-    font-size: 14px;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-
-/* Dots indicators */
-.carousel-dot {
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0 5px;
-    transition: background-color 0.5s ease;
-}
-
-.carousel-dot.active, .carousel-dot:hover {
-    background-color: #ff9800;
-}
-
-
-/* ------------------ CARROUSEL FIN ------------------ */
 
 /* ------------------ SNEAKERS MID INICIO ------------------ */
 
@@ -161,6 +120,7 @@ img {
 .product-grid {
     display: inline-block;
     margin: 0px 80px;
+    margin-top: 100px;
     gap: 90px;
     align-items: center;
     text-align: center;
@@ -212,10 +172,101 @@ button:hover {
 }
 
 /* ------------------ SNEAKERS MID FIN ------------------ */
+/* ------------------ CARROUSEL INICIO ------------------ */
+
+/* CARRUSEL CONTEINER*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 100px auto 50px;
+  }
+
+  /* Botones atras/sig */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 20px;
+    color: #171e28;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 150px;
+    user-select: none;
+  }
+  
+  .prev {
+    left: -72px;
+  }
+
+  /* Posicion del boton siguiente */
+  .next {
+    right: -72px;
+    border-radius: 150px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #d0cfcf;
+  }
+  
+  /* TextoGuia de en que imagen estan parados */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Puntos indicadores de en que imagen estan parados */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #f4af03;
+  }
+
+/* ------------------ CARROUSEL FIN ------------------ */
+
+/* ------------------ TEXTO MID INICIO ------------------ */
+p {
+    color: #fff;
+}
+/* ------------------ TEXTO MID FIN ------------------ */
+
+/* ------------------ SEGUNDA FILA DE SNEAKERS INICIO ------------------ */
+.product-grid-2 {
+    display: inline-block;
+    margin: 20px 80px;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    gap: 90px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.product-grid-2 h2 {
+    color: #2f3640;
+    text-align: left;
+}
+
+/* ------------------ SEGUNDA FILA DE SNEAKERS FIN ------------------ */
+
 /* ------------------ IMG MID INICIO ------------------ */
 
 .lil--nas {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -246,33 +297,9 @@ button:hover {
 }
 
 /* ------------------ IMG MID FIN ------------------ */
-
-/* ------------------ TEXTO MID INICIO ------------------ */
-p {
-    color: #fff;
-}
-/* ------------------ TEXTO MID FIN ------------------ */
-
-/* ------------------ SEGUNDA FILA DE SNEAKERS INICIO ------------------ */
-.product-grid-2 {
-    display: inline-block;
-    margin: 20px 80px;
-    margin-bottom: 80px;
-    gap: 90px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.product-grid-2 h2 {
-    color: #2f3640;
-    text-align: left;
-}
-
-/* ------------------ SEGUNDA FILA DE SNEAKERS FIN ------------------ */
-
 /* ------------------ FOOTER INICIO ------------------ */
 footer {
+    margin-top: 90px;
     text-align: center;
     padding: 30px 0;
     background-color: #171e28;
@@ -318,7 +345,7 @@ footer {
     list-style: none;
 }
 
-.column ul li a {
+.column a {
     text-decoration: none;
     color: #996f04;
 }
