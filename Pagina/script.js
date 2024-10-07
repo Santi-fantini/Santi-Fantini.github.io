@@ -3,7 +3,7 @@ const images = [
   { src: "/Imagenes/foto-carrousel--4.jpeg", caption: "1 / 5" },
   { src: "/Imagenes/foto-carrousel--2.jpeg", caption: "2 / 5" },
   { src: "/Imagenes/foto-carrousel--3.jpeg", caption: "3 / 5" },
-  { src: "/Imagenes/foto-carrousel--4.jpeg", caption: "4 / 5" },
+  { src: "/Imagenes/foto-carrousel--5.jpeg", caption: "4 / 5" },
   { src: "/Imagenes/foto-carrousel--1.jpeg", caption: "5 / 5" }
 ];
 
