@@ -38,39 +38,35 @@
     <div id="form--login">
         <div id="seccion">
             <a href="/Pagina/index.html"><p>Home</p></a>
-            <a href="#"><h1> REGISTRATE</h1></a>
+            <a href="#"><h1>REGISTRATE</h1></a>
         </div>
     
-    <form>
-                <!-- CAJA DE REGISTRO -->
-        <div class="form_input">
-            <fieldset id="q1">
-                <legend>REGISTRO</legend>
-                <input type="text" placeholder="Correo Electronico."> 
-                <input type="text" maxlength="10" placeholder="Num Telefono (maximo 10 caracteres)">
-                <input type="text" minlength="5" placeholder="Usuario (5 caracteres minimo.)">
-                <input type="text" minlength="7" placeholder="Contraseña (7 caracteres minimo.)">
-                <input type="text" minlength="7" placeholder="Repetir contraseña.">
-                <a href="/Pagina/index.html"><button type="submit">Registrarse</button></a>
-            </fieldset>
-        </div>
-                <!-- CAJA DE INICIO DE SESION-->
-        <div class="form_input">
-            <fieldset id="q1">
-                <legend>INICIAR SESION</legend>
-            <p>¿Ya tenes cuenta?</p>
-            <a href="/LoginForm/index.html"><button type="button">Iniciar Sesion</button></a> 
-            </fieldset>
-        </div>
-                <!-- BOTON PARA VOLVER A HOME-->
-        <div class="form_input">
-            <a href="/Pagina/index.html"><button type="button">Volver a inicio</button></a>
-        </div>
-    </form>
-</div>
+        <form id="formRegister">
+            <div class="form_input">
+                <fieldset id="q1">
+                    <legend>REGISTRO</legend>
+                    <input type="email" id="mail" placeholder="Correo Electronico.">
+                    <input type="number" id="phone" placeholder="Num Telefono">
+                    <input type="text" id="name" placeholder="Usuario (7 caracteres minimo.)">
+                    <input type="password" id="password" placeholder="Contraseña (8 caracteres minimo.)">
+                    <input type="password" id="password2" placeholder="Repetir contraseña.">
+                    <button type="submit">Registrarse</button>
+                    <p class="avisoVerificacion" id="avisoVerificacion"></p>
+                </fieldset>
+            </div>
+            <div class="form_input">
+                <fieldset id="q2">
+                    <legend>INICIAR SESION</legend>
+                    <p>¿Ya tienes cuenta?</p>
+                    <a href="/LoginForm/index.html"><button type="button">Iniciar Sesion</button></a>
+                </fieldset>
+            </div>
+            <div class="form_input">
+                <a href="/Pagina/index.html"><button type="button">Volver a inicio</button></a>
+            </div>
+        </form>
+<!------------------------------------------------------------- FORM FIN -------------------------------------------------------------> 
 
-    <!------------------------------------------------------------- FORM FIN -------------------------------------------------------------> 
-    
     <!------------------------------------------------------------- FOOTER INICIO -------------------------------------------------------------> 
 
     <footer>
@@ -119,10 +115,9 @@
         <div>
             <img src="/Imagenes/back--pagina0.jpg" id="logoFooter" alt="Logo SL">
         </div>
-    </footer>    
+    </footer>
+    <script src="/Registro/script.js"></script>  
 
     <!------------------------------------------------------------- FOOTER FIN ------------------------------------------------------------->    
-    <script src="/Registro/script.js"></script>
-    
 </body>
 </html>

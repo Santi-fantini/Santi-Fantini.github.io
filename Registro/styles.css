@@ -178,6 +178,11 @@ button:hover {
     transition-duration: 0.5s;
 }
 
+button:active {
+    background-color: #ffff;
+    color: #243132;
+}
+
 ::placeholder {
     color: #2f3640;
 } 
@@ -190,6 +195,15 @@ button:hover {
 #q2{
     color: #171e28;
     text-align: center;
+}
+
+.avisoVerificacion {
+    width: 300px;
+    text-align: center;
+    font-size: 15;
+    margin: auto;
+    color: #262a2f;
+    padding-top: 0px;
 }
 
 /* ------------------ FIN FORM ------------------ */

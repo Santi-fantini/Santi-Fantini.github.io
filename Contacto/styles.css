@@ -139,6 +139,15 @@ button:active {
     color: #243132;
 }
 
+.avisoVerificacion {
+    width: 300px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+    color: #f4af03;
+    padding-top: 15px;
+}
+
 /* ------------------ FIN FORM ------------------ */
 
 #seccion {

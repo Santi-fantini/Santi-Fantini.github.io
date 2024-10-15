@@ -38,14 +38,15 @@
             <a href="/Pagina/index.html"><p>Home</p></a>
             <a href="#"><h1> LOG IN</h1></a>
         </div>
-        <form>
+        <form id="loginForm">
                 <!-- CAJAS DE INICIO Y REGISTRO DE SESION -->
             <div class="form_input">         
                 <fieldset id="q1">
                     <legend>INICIO DE SESION</legend>
-                    <input type="text" minlength="5" placeholder="Usuario (5 caracteres minimo)">
-                    <input type="text" minlength="8" placeholder="Contraseña (recuerde que son 8 caracteres)">
-                    <a href="/Pagina/index.html"><button type="submit">Iniciar Sesion</button></a>
+                    <input type="text" id="name" placeholder="Usuario (5 caracteres minimo)">
+                    <input type="password" id="password"  placeholder="Contraseña (recuerde que son 8 caracteres)">
+                    <button type="submit">Iniciar Sesion</button>
+                    <p class="avisoVerificacion" id="avisoVerificacion"></p>
                 </fieldset>
             </div>
                     <!--BOTON PARA IR A REGISTRO-->
@@ -116,6 +117,7 @@
 
         <script src="/LoginForm/script.js"></script>
     </footer>
-            <!-------------------------------------------------------------FOOTER FIN ------------------------------------------------------------->    
+            <!-------------------------------------------------------------FOOTER FIN ------------------------------------------------------------->  
+    <script src="/LoginForm/script.js"></script>  
 </body>
 </html>

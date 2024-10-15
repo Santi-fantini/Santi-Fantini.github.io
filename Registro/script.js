@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("#form--login form");
     const emailInput = form.querySelector("input[placeholder='Correo Electronico.']");
     const telefonoInput = form.querySelector("input[placeholder='Num Telefono (maximo 10 caracteres)']");
@@ -46,4 +46,46 @@ document.addEventListener("DOMContentLoaded", function() {
             event.preventDefault();
         }
     });
+});*/
+
+const mail = document.getElementById("mail");
+const cel = document.getElementById("phone");
+const nombre = document.getElementById("name");
+const pass = document.getElementById("password");
+const form = document.getElementById("formRegister");
+const parrafo = document.getElementById("avisoVerificacion");
+
+form.addEventListener("submit", e => {
+    e.preventDefault();
+    let avisoVerificacion = "";
+    let login = false;
+    const mailVerificacion = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const celVerificacion = /^\d+$/;
+    parrafo.innerHTML = "";
+
+    if (!mailVerificacion.test(mail.value)) {
+        avisoVerificacion += '*El mail no es válido <br>';
+        login = true;
+    }
+
+    if (!celVerificacion.test(cel.value)) {
+        avisoVerificacion += '*El número telefónico no es válido <br>';
+        login = true;
+    }
+
+    if (nombre.value.length < 7) {
+        avisoVerificacion += '*El nombre no es válido <br>';
+        login = true;
+    }
+
+    if (pass.value.length < 8) {
+        avisoVerificacion += '*La contraseña no es válida';
+        login = true;
+    }
+
+    if (login) {
+        parrafo.innerHTML = avisoVerificacion;
+    } else {
+        parrafo.innerHTML = "CUENTA REGISTRADA CORRECTAMENTE";
+    }
 });
