@@ -1,4 +1,5 @@
 let slideIndex = 1;
+// array imagenes
 const images = [
   { src: "/Imagenes/foto-carrousel--4.jpeg", caption: "1 / 5" },
   { src: "/Imagenes/foto-carrousel--2.jpeg", caption: "2 / 5" },
@@ -7,14 +8,12 @@ const images = [
   { src: "/Imagenes/foto-carrousel--1.jpeg", caption: "5 / 5" }
 ];
 
-// Función para generar dinámicamente las imágenes y dots
-
 function createSlides() {
   const slideshowContainer = document.getElementById('slideshow-container');
   const dotsContainer = document.getElementById('dots-container');
   
   images.forEach((image, index) => {
-    // Crear cada slide
+
     const slideDiv = document.createElement('div');
     slideDiv.classList.add('mySlides', 'fade');
     slideDiv.innerHTML = `
@@ -23,7 +22,7 @@ function createSlides() {
     `;
     slideshowContainer.appendChild(slideDiv);
     
-    // Crear cada dot
+    // crear puntos de referencia img
     const dotSpan = document.createElement('span');
     dotSpan.classList.add('dot');
     dotSpan.onclick = function() { currentSlide(index + 1); };
@@ -47,16 +46,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-// Inicializar el carrusel
 createSlides();
 showSlides(slideIndex);
