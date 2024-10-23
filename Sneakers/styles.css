@@ -4,6 +4,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: 	#e5e6eb;
 }
+
+::-webkit-scrollbar { /* OCULTAR EL SCROLLBAR DE LA PAGINA */
+    display: none;
+}
 /*------------------ FIN DEL BODY ------------------*/
 
 /* ------------------ INICIO NAV ------------------ */

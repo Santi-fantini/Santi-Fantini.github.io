@@ -1,7 +1,12 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    background-color: #e5e6eb;
+    background: rgb(23,30,40);
+    background: linear-gradient(0deg, rgba(23,30,40,1) 0%, rgba(111,81,29,1) 0%, rgba(23,30,40,1) 100%);
+}
+
+::-webkit-scrollbar { /* OCULTAR EL SCROLLBAR DE LA PAGINA */
+    display: none;
 }
 
 /* ------------------ INICIO NAV ------------------ */
@@ -92,7 +97,7 @@ img {
 #seccion a {
     text-decoration: none;
     outline: none;
-    color: #171e28;
+    color: #ffffff;
 }
 
 #seccion a:hover {
@@ -104,7 +109,7 @@ img {
 #seccion h1 {
     text-decoration: none;
     outline: none;
-    color: #171e28;
+    color: #ffffff;
 }
 
 #seccion h1:hover {
@@ -120,11 +125,14 @@ img {
 }
 
 form {
-    background-color: #f8f8fa;
+    background-color: #ebebed;
+    box-shadow: 0px 0px 10px #7e8288;
     padding: 20px;
     max-width: 600px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 80px;
+    border-top: 7px solid #f4af03;
 }
 
 .form_input {
@@ -135,16 +143,22 @@ input {
     width: 100%;
     box-sizing: border-box;
     padding: 6px 12px;
-    border: none;
-    border: 1px solid #2f3640;
     background-color: transparent;
     border-radius: 4px;
     color: #171e28;
     margin: 7px 0px;
+    border: none;
+    border-bottom: 0.5px solid #c6c8cc;  
+    transition: border-bottom-color 0.3s ease;
 }
 
 input:hover {
     background-color: #d2d4dc;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #f4a803;
 }
 
 fieldset {

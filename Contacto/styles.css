@@ -1,8 +1,13 @@
 body {
     margin: 0;
     color: #f4af03;
-    background-color: #2f3640;
+    background: rgb(23,30,40);
+background: radial-gradient(circle, rgba(23,30,40,1) 0%, rgba(111,81,29,1) 0%, rgba(23,30,40,1) 100%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::-webkit-scrollbar { /* OCULTAR EL SCROLLBAR DE LA PAGINA */
+    display: none;
 }
 
 /* ------------------ INICIO NAV ------------------ */
@@ -85,12 +90,16 @@ img {
 /* ------------------ INICIO FORM ------------------ */
 
 .form {
-    margin-top: 5px;
+    background-color: #00000051;
+    box-shadow: 0px 0px 40px rgb(89, 65, 24);
+    border-top: 4px solid #f4aa3b56;
+    width: 690px;
     min-height: 50vh;
+    margin-top: 5px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .form__form {
@@ -102,9 +111,17 @@ img {
     width: 100%;
     padding: 9px 6px;
     font-size: 16px;
-    margin: 4px;
+    margin: 20px auto;
+    background-color: transparent;
+    color: #d9d4d4;
     border: none;
-    box-shadow: 0px 0px 9px #0003;
+    border-bottom: 0.5px solid #c6c8cc;  
+    transition: border-bottom-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 4px solid #f4a803;
 }
 
 label {
